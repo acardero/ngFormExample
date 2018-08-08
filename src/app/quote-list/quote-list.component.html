@@ -1,0 +1,7 @@
+<h1> Welcome to Angular </h1>
+<h3> An awesome quote list! </h3>
+<ul>
+  <li *ngFor="let quote of quotes">
+    <app-quote-item [theQuote]="quote" (onDelete)="removeQuote($event)"></app-quote-item>
+  </li>
+</ul>
